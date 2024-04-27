@@ -28,7 +28,7 @@ sudo apt install nginx -y
 
 #### Установка PHP и расширений
 ```bash
-Установка PHP и расширений
+sudo apt install php7.4 php7.4-fpm php7.4-mysql php7.4-xml php7.4-mbstring php7.4-curl -y
 ```
 
 #### Установка MySQL
