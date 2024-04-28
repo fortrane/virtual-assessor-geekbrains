@@ -1,12 +1,12 @@
 from langchain_community.document_loaders import Docx2txtLoader, PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
-#import ocr
+import ocr
 
 
 def docx_loader(path):
     loader = Docx2txtLoader(path)
     data = loader.load()
-    #data[0].page_content +=ocr.docx_ocr(path)
+    data[0].page_content +=ocr.docx_ocr(path)
     return data
 
 
